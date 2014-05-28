@@ -7,5 +7,11 @@ Delphi Libs
 ShellKnownPath.pas
 =================
 
-Windows Shell Known Path
+Get Windows Shell Known Path
+
+
+WindowsVersion.pas
+=================
+
+Get Windows Version
 
