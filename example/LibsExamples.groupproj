@@ -1,0 +1,60 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{A9D498E1-025E-4D1A-B18A-3BFF0F3F54E2}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="KnownPathExample\ShellKnownPathExample.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SparseFileStream\SparseFileStreamTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="WindowsVersion\WindowsVersionExample.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="ShellKnownPathExample">
+			<MSBuild Projects="KnownPathExample\ShellKnownPathExample.dproj"/>
+		</Target>
+		<Target Name="ShellKnownPathExample:Clean">
+			<MSBuild Targets="Clean" Projects="KnownPathExample\ShellKnownPathExample.dproj"/>
+		</Target>
+		<Target Name="ShellKnownPathExample:Make">
+			<MSBuild Targets="Make" Projects="KnownPathExample\ShellKnownPathExample.dproj"/>
+		</Target>
+		<Target Name="SparseFileStreamTest">
+			<MSBuild Projects="SparseFileStream\SparseFileStreamTest.dproj"/>
+		</Target>
+		<Target Name="SparseFileStreamTest:Clean">
+			<MSBuild Targets="Clean" Projects="SparseFileStream\SparseFileStreamTest.dproj"/>
+		</Target>
+		<Target Name="SparseFileStreamTest:Make">
+			<MSBuild Targets="Make" Projects="SparseFileStream\SparseFileStreamTest.dproj"/>
+		</Target>
+		<Target Name="WindowsVersionExample">
+			<MSBuild Projects="WindowsVersion\WindowsVersionExample.dproj"/>
+		</Target>
+		<Target Name="WindowsVersionExample:Clean">
+			<MSBuild Targets="Clean" Projects="WindowsVersion\WindowsVersionExample.dproj"/>
+		</Target>
+		<Target Name="WindowsVersionExample:Make">
+			<MSBuild Targets="Make" Projects="WindowsVersion\WindowsVersionExample.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="ShellKnownPathExample;SparseFileStreamTest;WindowsVersionExample"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="ShellKnownPathExample:Clean;SparseFileStreamTest:Clean;WindowsVersionExample:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="ShellKnownPathExample:Make;SparseFileStreamTest:Make;WindowsVersionExample:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>
