@@ -81,6 +81,15 @@ begin
     Test_ntohd;
     Test_ntohf;
     Test_ntohll;
+
+    if TWinsock2Addon.IsLittleEndian then
+    begin
+      WriteLn( 'Little Endian' );
+    end
+    else
+    begin
+      WriteLn( 'Big Endian' );
+    end;
   except
     on E: Exception do
       Writeln(E.ClassName, ': ', E.Message);

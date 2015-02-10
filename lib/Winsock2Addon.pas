@@ -16,6 +16,8 @@ type
     class function ntohd(Value: UInt64): Double; inline; static;
     class function ntohf(Value: UInt32): Single; inline; static;
     class function ntohll(Value: UInt64): UInt64; inline; static;
+
+    class function IsLittleEndian: Boolean; static;
   end;
 
 implementation
@@ -41,6 +43,14 @@ class function TWinsock2Addon.htonll(Value: UInt64): UInt64;
 begin
   // Result := (UInt64(htonl(Value)) shl 32) + htonl((Value) shr 32);
   Result := WS2_32_WINSOCK_SWAP_LONGLONG(Value);
+end;
+
+class function TWinsock2Addon.IsLittleEndian: Boolean;
+var
+  Num: Integer;
+begin
+  Num := 42;
+  Result := PByte(@Num)^ = 42;
 end;
 
 class function TWinsock2Addon.ntohd(Value: UInt64): Double;
