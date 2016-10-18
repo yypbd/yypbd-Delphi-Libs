@@ -1,4 +1,4 @@
-program WindowsVersionExample;
+﻿program WindowsVersionExample;
 
 uses
   Vcl.Forms,

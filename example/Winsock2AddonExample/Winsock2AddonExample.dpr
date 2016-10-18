@@ -1,4 +1,4 @@
-program Winsock2AddonExample;
+﻿program Winsock2AddonExample;
 
 {$APPTYPE CONSOLE}
 

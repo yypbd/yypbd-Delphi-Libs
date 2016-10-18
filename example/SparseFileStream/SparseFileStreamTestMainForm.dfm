@@ -1,4 +1,4 @@
-object FormSparseFileStreamMain: TFormSparseFileStreamMain
+﻿object FormSparseFileStreamMain: TFormSparseFileStreamMain
   Left = 0
   Top = 0
   Caption = 'FormSparseFileStreamMain'

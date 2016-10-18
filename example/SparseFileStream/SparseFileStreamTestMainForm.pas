@@ -1,4 +1,4 @@
-unit SparseFileStreamTestMainForm;
+﻿unit SparseFileStreamTestMainForm;
 
 interface
 

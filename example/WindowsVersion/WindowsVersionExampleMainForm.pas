@@ -1,4 +1,4 @@
-unit WindowsVersionExampleMainForm;
+﻿unit WindowsVersionExampleMainForm;
 
 interface
 

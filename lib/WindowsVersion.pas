@@ -1,4 +1,4 @@
-unit WindowsVersion;
+﻿unit WindowsVersion;
 
 interface
 

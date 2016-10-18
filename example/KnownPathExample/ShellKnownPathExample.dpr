@@ -1,4 +1,4 @@
-program ShellKnownPathExample;
+﻿program ShellKnownPathExample;
 
 uses
   Vcl.Forms,

@@ -1,4 +1,4 @@
-unit ShellKnownPath;
+﻿unit ShellKnownPath;
 
 interface
 

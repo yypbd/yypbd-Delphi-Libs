@@ -1,4 +1,4 @@
-unit SparseFileStream;
+﻿unit SparseFileStream;
 
 interface
 

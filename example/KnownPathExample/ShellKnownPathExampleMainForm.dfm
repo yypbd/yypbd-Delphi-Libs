@@ -1,4 +1,4 @@
-object FormShellKnownPathExampleMain: TFormShellKnownPathExampleMain
+﻿object FormShellKnownPathExampleMain: TFormShellKnownPathExampleMain
   Left = 0
   Top = 0
   Caption = 'FormShellKnownPathExampleMain'

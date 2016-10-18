@@ -1,4 +1,4 @@
-program SparseFileStreamTest;
+﻿program SparseFileStreamTest;
 
 uses
   Vcl.Forms,

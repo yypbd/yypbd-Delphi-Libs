@@ -1,4 +1,4 @@
-unit Winsock2Addon;
+﻿unit Winsock2Addon;
 
 interface
 
